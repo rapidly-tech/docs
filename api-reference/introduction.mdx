@@ -29,15 +29,6 @@ description: "Base URLs, authentication, pagination, rate limits, and the differ
 | Environment | Base URL                          | Purpose                         |
 | ----------- | --------------------------------- | ------------------------------- |
 | Production  | `https://api.rapidly.tech/api`         | Real customers & live payments  |
-| Sandbox     | `https://sandbox-api.rapidly.tech/api` | Safe testing & integration work |
-
-<Info>
-  The sandbox environment is fully isolated—data, users, tokens, and
-  workspaces created there do not affect production. Create separate tokens
-  in each environment.
-</Info>
-
-Read more: [Sandbox Environment](/integrate/sandbox)
 
 ## Authentication
 
@@ -89,12 +80,6 @@ curl https://api.rapidly.tech/api/shares/ \
   -H "Accept: application/json"
 ```
 
-```bash curl (Sandbox - Core API)
-curl https://sandbox-api.rapidly.tech/api/shares/ \
-  -H "Authorization: Bearer $RAPIDLY_OAT_SANDBOX" \
-  -H "Accept: application/json"
-```
-
 ```bash curl (Customer Portal API)
 curl https://api.rapidly.tech/api/customer-portal/ \
   -H "Authorization: Bearer $RAPIDLY_CUSTOMER_TOKEN" \
@@ -109,9 +94,6 @@ You can call the Rapidly API directly using `fetch` (TypeScript) or `httpx` (Pyt
 
 <CodeGroup>
 ```ts TypeScript
-// For sandbox: https://sandbox-api.rapidly.tech/api
-// For production: https://api.rapidly.tech/api
-
 const response = await fetch("https://api.rapidly.tech/api/shares/", {
   headers: {
     Authorization: `Bearer ${process.env.RAPIDLY_ACCESS_TOKEN!}`,
@@ -125,9 +107,6 @@ const data = await response.json();
 ```py Python
 import os
 import httpx
-
-# For sandbox: https://sandbox-api.rapidly.tech
-# For production: https://api.rapidly.tech
 
 client = httpx.Client(
     base_url="https://api.rapidly.tech",

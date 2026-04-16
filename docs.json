@@ -41,7 +41,6 @@
               "features/analytics",
               "features/customer-management",
               "features/customer-portal",
-              "features/custom-fields",
               {
                 "group": "Finance & Payouts",
                 "pages": [
@@ -56,7 +55,7 @@
             "group": "Integrate",
             "pages": [
               "integrate/authentication",
-              "integrate/sandbox",
+              "integrate/oat",
               {
                 "group": "Webhooks",
                 "pages": [
@@ -304,7 +303,7 @@
     },
     {
       "source": "/developers/sandbox",
-      "destination": "/integrate/sandbox"
+      "destination": "/introduction"
     },
     {
       "source": "/developers/:path*",
@@ -312,7 +311,7 @@
     },
     {
       "source": "/docs/developers/sandbox",
-      "destination": "/integrate/sandbox"
+      "destination": "/introduction"
     },
     {
       "source": "/docs/developers/:path*",
@@ -376,7 +375,7 @@
     },
     {
       "source": "/documentation/features/sandbox",
-      "destination": "/integrate/sandbox"
+      "destination": "/introduction"
     },
     {
       "source": "/documentation/integration-guides/authenticating-with-rapidly",
