@@ -8,7 +8,7 @@ Website: https://rapidly.tech
 Docs: https://rapidly.tech/docs
 API Reference: https://rapidly.tech/docs/api-reference
 GitHub: https://github.com/rapidly-tech/rapidly
-Discord: https://dub.sh/rapidly-discord
+Reddit: https://www.reddit.com/r/rapidly_/
 
 ## Features
 
@@ -41,9 +41,6 @@ Real-time event notifications for automation and integrations. Configure webhook
 
 ### OAuth 2.0
 Full RFC 6749 / OpenID Connect implementation. Use Rapidly as an identity provider for your applications. Authorization code flow, refresh tokens, token introspection, and revocation. Client management via dashboard or API.
-
-### Sandbox Environment
-Isolated test environment for development. Use Stripe test card numbers for payment testing. SDK configuration flag to switch between sandbox and production. No real transactions processed.
 
 ## Authentication
 
@@ -151,5 +148,5 @@ Automated compliance reviews using AI-powered validation. Evaluates workspaces a
 
 - Email: support@rapidly.tech
 - GitHub Issues: https://github.com/rapidly-tech/rapidly/issues
-- Feature Requests: https://github.com/orgs/rapidly-tech/discussions/categories/feature-requests
-- Discord: https://dub.sh/rapidly-discord
+- Feature Requests: https://github.com/rapidly-tech/rapidly/issues
+- Reddit: https://www.reddit.com/r/rapidly_/
